@@ -148,3 +148,47 @@ code {
   opacity: 0.5;
 }
 
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.header-wrapper {
+  text-align: left;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.header-logo {
+  font-size: 22px;
+  color: #FFFFFF;
+  float: left;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-nav {
+  margin-top 8px
+  font-size: 13px;
+  color: #FFFFFF;
+  margin: 0 16px;
+  padding: 0 2px;
+  font-weight: 600;
+  line-height: 15px;
+  position: relative;
+  float: right;
+}
+
+.header-nav a {
+  font-size: 13px;
+  color: #FFFFFF;
+  margin: 0 16px;
+  padding: 0 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 15px;
+  position: relative;
+}
+

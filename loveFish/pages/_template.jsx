@@ -3,7 +3,9 @@ import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
-
+import {stack as Menu} from 'react-burger-menu';
+import Icon from 'assets/icon'
+import logo from 'assets/lion.png'
 import { rhythm } from 'utils/typography'
 
 module.exports = React.createClass({
@@ -31,32 +33,28 @@ module.exports = React.createClass({
 
             }}
           >
-            <Link
-              to={prefixLink('/')}
-              style={{
-                color: 'black',
-                textDecoration: 'none',
-                fontSize: 30,
-                fontWeight: 500,
-              }}
-            >
+
+          <Link className="header-logo" to="/">
+              <Icon src={logo} />
               Forever Love For Fishbrook
-            </Link>
-            <br/>
-            <Link
-              to={prefixLink('/')}
-              style={{
-                color: 'black',
-                textDecoration: 'none',
-                paddingLeft: 500,
-                fontSize: 20
-              }}
-            >
-            --Ark
-            </Link>
+          </Link>
+
+          <header className="header">
+            <div className="header-wrapper">
+                <nav className="header-nav">
+                    <span><Link to={prefixLink('/family/')}>Family</Link></span>
+                    <span><Link to="/html/">Moments</Link></span>
+                    <a href="https://github.com/fangzhou37/WebExperiment">Github</a>
+                </nav>
+            </div>
+          </header>
 
           </Container>
+
+
         </Headroom>
+
+
 
         <Container
           style={{
