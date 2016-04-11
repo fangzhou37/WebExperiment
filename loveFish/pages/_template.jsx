@@ -5,7 +5,6 @@ import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import {stack as Menu} from 'react-burger-menu';
 import Icon from 'assets/icon'
-import logo from 'assets/lion.png'
 import { rhythm } from 'utils/typography'
 
 module.exports = React.createClass({
@@ -35,7 +34,7 @@ module.exports = React.createClass({
           >
 
           <Link className="header-logo" to="/">
-              <Icon src={logo} />
+              <Icon source="./images/lion.png" />
               Forever Love For Fishbrook
           </Link>
 
@@ -43,7 +42,7 @@ module.exports = React.createClass({
             <div className="header-wrapper">
                 <nav className="header-nav">
                     <span><Link to={prefixLink('/family/')}>Family</Link></span>
-                    <span><Link to="/html/">Moments</Link></span>
+                    <span><Link to="/moments/">Moments</Link></span>
                     <a href="https://github.com/fangzhou37/WebExperiment">Github</a>
                 </nav>
             </div>
