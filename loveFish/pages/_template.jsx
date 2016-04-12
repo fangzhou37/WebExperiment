@@ -34,7 +34,7 @@ module.exports = React.createClass({
           >
 
           <Link className="header-logo" to="/">
-              <Icon source="./images/lion.png" />
+              <Icon source="/images/lion.png" />
               Forever Love For Fishbrook
           </Link>
 
