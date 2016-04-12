@@ -5,23 +5,16 @@ module.exports = React.createClass({
   getInitialState: function () {
     return {count: 10};
   },
-  click: function () {
-    this.setState({count: this.state.count + 1});
-  },
   render: function () {
     var settings = {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
       waitForAnimate: false,
-      beforeChange: function (currentSlide, nextSlide) {
-        console.log('before change', currentSlide, nextSlide);
-      },
-      afterChange: function (currentSlide) {
-        console.log('after change', currentSlide);
-      },
+      autoplay: true,
+      autoplaySpeed: 2000
     };
 
     var imageElements = [];
