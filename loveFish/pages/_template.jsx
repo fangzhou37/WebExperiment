@@ -33,16 +33,18 @@ module.exports = React.createClass({
             }}
           >
 
-          <Link className="header-logo" to="/">
-              <Icon source="/images/lion.png" />
-              Forever Love For Fishbrook
+          <Link className="header-logo" to={prefixLink("/")}>
+              <Icon source={prefixLink("/images/lion.png")} />
+              爱阿宝 爱小宝
           </Link>
 
           <header className="header">
             <div className="header-wrapper">
                 <nav className="header-nav">
-                    <span><Link to={prefixLink('/family/')}>Family</Link></span>
-                    <span><Link to="/moments/">Moments</Link></span>
+                    <span><Link to={prefixLink('/')}>首页</Link></span>
+                    <span><Link to={prefixLink('/family/')}>家</Link></span>
+                    <span><Link to={prefixLink("/moments/")}>狮子的故事</Link></span>
+                    <span><Link to={prefixLink("/foods/")}>美食</Link></span>                    
                     <a href="https://github.com/fangzhou37/WebExperiment">Github</a>
                 </nav>
             </div>

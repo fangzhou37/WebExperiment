@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { prefixLink } from 'gatsby-helpers'
 
 module.exports = React.createClass({
   getInitialState: function () {
@@ -20,7 +21,7 @@ module.exports = React.createClass({
     var imageElements = [];
     for (var i = 1; i <= 14; i++) {
       var path = '/images/'+i+'.jpg';
-      imageElements.push(<img src={path}/>);
+      imageElements.push(<img src={prefixLink(path)}/>);
     }
 
     return (
