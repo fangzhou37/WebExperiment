@@ -114,4 +114,4 @@
 我很爱阿宝，很爱小宝，也很爱我们的生活。
 希望家人幸福健康平安。
 
-![幸福](/images/HappyFamily.jpg)
+![幸福](/intern/images/HappyFamily.jpg)
