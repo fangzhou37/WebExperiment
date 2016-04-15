@@ -3,7 +3,6 @@ import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
-import {stack as Menu} from 'react-burger-menu';
 import Icon from 'assets/icon'
 import { rhythm } from 'utils/typography'
 
@@ -35,7 +34,7 @@ module.exports = React.createClass({
 
           <Link className="header-logo" to={prefixLink("/")}>
               <Icon source={prefixLink("/images/lion.png")} />
-              爱阿宝 爱小宝
+              爱阿宝 爱小宝 爱生活
           </Link>
 
           <header className="header">
@@ -44,8 +43,8 @@ module.exports = React.createClass({
                     <span><Link to={prefixLink('/')}>首页</Link></span>
                     <span><Link to={prefixLink('/family/')}>家</Link></span>
                     <span><Link to={prefixLink("/moments/")}>狮子的故事</Link></span>
-                    <span><Link to={prefixLink("/foods/")}>美食</Link></span>                    
-                    <a href="https://github.com/fangzhou37/WebExperiment">Github</a>
+                    <span><Link to={prefixLink("/foods/")}>美食</Link></span>
+                    <span><Link to={prefixLink("/labo/")}>labo之舞</Link></span>
                 </nav>
             </div>
           </header>

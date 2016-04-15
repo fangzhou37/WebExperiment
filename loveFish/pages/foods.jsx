@@ -1,11 +1,10 @@
 import React from 'react';
-import Gallery from 'react-photo-gallery';
 import { prefixLink } from 'gatsby-helpers'
  
 export default class foodPictures extends React.Component {
     render() {
       var imageElements = [];
-      for (var i = 15; i <= 21; i++) {
+      for (var i = 115; i <= 133; i++) {
         var path = '/images/'+i+'.jpg';
         imageElements.push(<img src={prefixLink(path)} width="300"/>);
       }

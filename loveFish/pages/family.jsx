@@ -11,15 +11,15 @@ module.exports = React.createClass({
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       waitForAnimate: false,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 1500
     };
 
     var imageElements = [];
-    for (var i = 1; i <= 14; i++) {
+    for (var i = 1; i <= 31; i++) {
       var path = '/images/'+i+'.jpg';
       imageElements.push(<img src={prefixLink(path)}/>);
     }
