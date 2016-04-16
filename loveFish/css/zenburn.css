@@ -164,18 +164,18 @@ code {
   font-size: 22px;
   color: #FFFFFF;
   float: left;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .header-nav {
-  margin-top 8px
+  margin-top: 8px;
+  margin-right: 2px;
   font-size: 13px;
-  color: #FFFFFF;
   margin: 0 16px;
   padding: 0 2px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 15px;
   position: relative;
   float: right;
@@ -184,10 +184,8 @@ code {
 .header-nav a {
   font-size: 16px;
   color: #FFFFFF;
-  margin: 0 16px;
+  margin: 0 12px;
   padding: 0 2px;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 15px;
   position: relative;
+  text-decoration: none;
 }

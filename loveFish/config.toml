@@ -1,2 +1,21 @@
 siteTitle="Love Fish"
 linkPrefix = "/intern"
+baseColor = "#E96956"
+docPages = [
+  "/foods/pig-feet/",
+  "/foods/blueberry-cake/",
+  "/foods/chouchou/",
+  "/foods/chuan/",
+  "/foods/coconutmango/",
+  "/foods/congyouji/",
+  "/foods/dongyinggong/",
+  "/foods/eggplant/",
+  "/foods/goldsilver/",
+  "/foods/happyfestival/",
+  "/foods/lawei/",
+  "/foods/lovecake/",
+  "/foods/luckycake/",
+  "/foods/mianjin/",
+  "/foods/strawmango/",
+  "/foods/suantangyu/",
+]

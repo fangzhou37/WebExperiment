@@ -5,6 +5,8 @@ import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import Icon from 'assets/icon'
 import { rhythm } from 'utils/typography'
+import includes from 'underscore.string/include'
+import { colors, activeColors } from 'utils/colors'
 
 module.exports = React.createClass({
   propTypes () {
@@ -13,6 +15,7 @@ module.exports = React.createClass({
     }
   },
   render () {
+    const docsActive = includes(this.props.location.pathname, '/docs/')
     return (
       <div>
         <Headroom
@@ -40,11 +43,11 @@ module.exports = React.createClass({
           <header className="header">
             <div className="header-wrapper">
                 <nav className="header-nav">
-                    <span><Link to={prefixLink('/')}>首页</Link></span>
-                    <span><Link to={prefixLink('/family/')}>家</Link></span>
-                    <span><Link to={prefixLink("/moments/")}>狮子的故事</Link></span>
-                    <span><Link to={prefixLink("/foods/")}>美食</Link></span>
-                    <span><Link to={prefixLink("/labo/")}>labo之舞</Link></span>
+                    <Link to={prefixLink('/')}>首页</Link>
+                    <Link to={prefixLink('/family/')}>家</Link>
+                    <Link to={prefixLink("/moments/")}>狮子的故事</Link>
+                    <Link to={prefixLink("/foods/")}>美食</Link>
+                    <Link to={prefixLink("/labo/")}>喇脖之舞</Link>
                 </nav>
             </div>
           </header>
