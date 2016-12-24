@@ -19,7 +19,7 @@ module.exports = React.createClass({
     };
 
     var imageElements = [];
-    for (var i = 1; i <= 31; i++) {
+    for (var i = 1; i <= 50; i++) {
       var path = '/images/'+i+'.jpg';
       imageElements.push(<img src={prefixLink(path)}/>);
     }

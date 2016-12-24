@@ -1,0 +1,21 @@
+cd ~/Projects/WebExperiment/loveFish;
+
+rm -rf ~/public
+
+gatsby build --prefix-links;
+
+rm -rf ~/Projects/gitIO/intern
+
+cp -r public ../../gitIO/intern/
+
+cd ../../gitIO
+
+git add .
+
+time_stamp=$(date +%Y-%m-%d-%H-%M-%S)
+
+git commit -m "deploy: $time_stamp"
+
+git push -u origin master
+
+cd - 
